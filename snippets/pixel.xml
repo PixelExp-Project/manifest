@@ -27,6 +27,14 @@
           fetch="https://gitlab.pixelexperience.org/android/vendor-blobs"
           revision="eleven" />
 
+  <remote name="pixelproj"
+          fetch="ssh://git@github.com/PixelExp-Project"
+          revision="eleven" />
+
+  <remote name="proton"
+          fetch="https://github.com/kdrag0n"
+          revision="master" />
+
   <remote name="gitlab"
           fetch="https://gitlab.com" />
 
@@ -106,17 +114,17 @@
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="pixel" />
 
   <!-- Framework repos -->
-  <project path="frameworks/av" name="frameworks_av" remote="pixel-plus" />
-  <project path="frameworks/base" name="frameworks_base" remote="pixel-plus" />
-  <project path="frameworks/native" name="frameworks_native" remote="pixel-plus" />
+  <project path="frameworks/av" name="frameworks_av" remote="pixelproj" />
+  <project path="frameworks/base" name="frameworks_base" remote="pixelproj" />
+  <project path="frameworks/native" name="frameworks_native" remote="pixelproj" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="pixel" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixel" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="pixel" />
   <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="pixel" />
 
   <!-- General repos -->
-  <project path="art" name="art" remote="pixel" />
-  <project path="bionic" name="bionic" remote="pixel" />
+  <project path="art" name="art" remote="pixelproj" />
+  <project path="bionic" name="bionic" remote="pixelproj" />
   <project path="build/make" name="build" remote="pixel">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -133,10 +141,10 @@
   <project path="build/blueprint" name="build_blueprint" remote="pixel" />
   <project path="bootable/recovery" name="bootable_recovery" remote="pixel" />
   <project path="development" name="development" remote="pixel" />
-  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="pixel" />
-  <project path="manifest" name="manifest" remote="pixel-plus" />
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="pixelproj" />
+  <project path="manifest" name="manifest" remote="pixelproj" />
   <project path="platform_testing" name="platform_testing" remote="pixel" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="pixel-plus" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="pixelproj" />
   <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="pixel" />
 
@@ -174,7 +182,7 @@
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
   <project path="packages/apps/PermissionController" name="packages_apps_PermissionController" remote="pixel-plus" />
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="pixel" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pixel-plus" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pixelproj" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="pixel" />
   <project path="packages/apps/Snap" name="packages_apps_Snap" remote="pixel" />
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="pixel" />
@@ -197,14 +205,15 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="pixel" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="pixel" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" remote="pixel" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="proton" clone-depth="1" />
 
   <!-- System Repos -->
   <project path="system/bt" name="system_bt" remote="pixel" />
-  <project path="system/core" name="system_core" remote="pixel" />
+  <project path="system/core" name="system_core" remote="pixelproj" />
   <project path="system/incremental_delivery" name="system_incremental_delivery" remote="pixel" />
   <project path="system/libufdt" name="system_libufdt" remote="pixel" />
   <project path="system/media" name="system_media" remote="pixel" />
-  <project path="system/netd" name="system_netd" remote="pixel-plus" />
+  <project path="system/netd" name="system_netd" remote="pixelproj" />
   <project path="system/nfc" name="system_nfc" remote="pixel" />
   <project path="system/sepolicy" name="system_sepolicy" remote="pixel" />
   <project path="system/timezone" name="system_timezone" remote="pixel" />
