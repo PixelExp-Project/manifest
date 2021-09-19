@@ -39,6 +39,10 @@
           fetch="https://github.com/kdrag0n"
           revision="master" />
 
+  <remote name="evox"
+          fetch="https://github.com/Evolution-X"
+          revision="elle" />
+
   <remote name="gitlab"
           fetch="https://gitlab.com" />
 
@@ -116,6 +120,7 @@
   <project path="external/tinycompress" name="external_tinycompress" remote="pixel" />
   <project path="external/toybox" name="external_toybox" remote="pixel" />
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="pixel" />
+  <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="evox" />
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="pixelproj" />
