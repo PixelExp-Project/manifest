@@ -234,5 +234,6 @@
 
   <!-- Tools Repos -->
   <project path="tools/metalava" name="tools_metalava" remote="pixel" />
+  <project path="libcore" name="libcore" remote="pixelproj" />
 
 </manifest>
