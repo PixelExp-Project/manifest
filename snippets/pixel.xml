@@ -7,8 +7,12 @@
           review="gerrit.pixelexperience.org" />
 
   <remote name="pixel++"
-          fetch="ssh://git@github.com/PixelExp-Project"
+          fetch="https://github.com/PixelExp-Project"
           revision="twelve" />
+
+  <remote name="proton"
+          fetch="https://github.com/ProtonAOSP"
+          revision="sc" />
 
   <remote name="pixel-gitlab"
           fetch="https://gitlab.com/PixelExperience"
@@ -33,6 +37,7 @@
   <project path="external/gptfdisk" name="external_gptfdisk" remote="pixel" />
   <project path="external/guice" name="external_guice" remote="pixel" />
   <project path="external/icu" name="external_icu" remote="pixel" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc_new" remote="proton" />
   <project path="external/libcxx" name="external_libcxx" remote="pixel" />
   <project path="external/mksh" name="external_mksh" remote="pixel" />
   <project path="external/perfetto" name="external_perfetto" remote="pixel" />
@@ -46,6 +51,7 @@
   <project path="frameworks/av" name="frameworks_av" remote="pixel" />
   <project path="frameworks/base" name="frameworks_base" remote="pixel++" />
   <project path="frameworks/native" name="frameworks_native" remote="pixel" />
+  <project path="frameworks/libs/net" name="frameworks_libs_net" remote="pixel++" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="pixel" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixel" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="pixel" />
@@ -53,7 +59,7 @@
 
   <!-- General repos -->
   <project path="art" name="art" remote="pixel" />
-  <project path="bionic" name="bionic" remote="pixel" />
+  <project path="bionic" name="bionic" remote="pixel++" />
   <project path="build/make" name="build" remote="pixel">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -105,7 +111,7 @@
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="pixel" />
   <project path="packages/apps/Traceur" name="packages_apps_Traceur" remote="pixel" />
   <project path="packages/modules/adb" name="packages_modules_adb" remote="pixel" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="pixel" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="pixel++" />
   <project path="packages/modules/DnsResolver" name="packages_modules_DnsResolver" remote="pixel" />
   <project path="packages/modules/NetworkStack" name="packages_modules_NetworkStack" remote="pixel" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="pixel" />

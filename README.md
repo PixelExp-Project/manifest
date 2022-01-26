@@ -5,7 +5,7 @@
 ```bash
 
 # Initialize local repository
-repo init -u git@github.com:PixelExp-Project/manifest.git -b twelve
+repo init -u https://github.com/PixelExp-Project/manifest.git -b twelve
 
 # Sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
