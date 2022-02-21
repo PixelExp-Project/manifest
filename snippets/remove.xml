@@ -106,6 +106,7 @@
   <remove-project name="platform/hardware/broadcom/libbt" />
   <remove-project name="platform/hardware/google/pixel" />
   <remove-project name="platform/hardware/interfaces" />
+  <remove-project name="platform/hardware/knowles/athletico/sound_trigger_hal" />
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/nxp/nfc" />
   <remove-project name="platform/hardware/qcom/audio" />
@@ -125,6 +126,11 @@
   <remove-project name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" />
   <remove-project name="platform/hardware/qcom/sdm845/display" />
   <remove-project name="platform/hardware/qcom/sdm845/media" />
+  <remove-project name="platform/hardware/qcom/sm7250/display" />
+  <remove-project name="platform/hardware/qcom/sm7250/media" />
+  <remove-project name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" />
+  <remove-project name="platform/hardware/qcom/sm8150/display" />
+  <remove-project name="platform/hardware/qcom/sm8150/media" />
   <remove-project name="platform/hardware/qcom/wlan" />
   <remove-project name="platform/hardware/ril" />
 
@@ -159,6 +165,7 @@
   <remove-project name="platform/packages/modules/Connectivity" />
   <remove-project name="platform/packages/modules/DnsResolver" />
   <remove-project name="platform/packages/modules/NetworkStack" />
+  <remove-project name="platform/packages/modules/Wifi" />
   <remove-project name="platform/packages/providers/DownloadProvider" />
   <remove-project name="platform/packages/providers/MediaProvider" />
   <remove-project name="platform/packages/screensavers/Basic" />
@@ -180,6 +187,7 @@
   <remove-project name="platform/system/bpf" />
   <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/extras" />
   <remove-project name="platform/system/incremental_delivery" />
   <remove-project name="platform/system/tools/mkbootimg" />
   <remove-project name="platform/system/libhwbinder" />
