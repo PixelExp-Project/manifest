@@ -115,6 +115,7 @@
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="pixel" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="pixel++" />
+  <project path="packages/apps/SoftAPManager" name="packages_apps_SoftAPManager" remote="pixel++" />
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="pixel" />
   <project path="packages/apps/Traceur" name="packages_apps_Traceur" remote="pixel" />
   <project path="packages/modules/adb" name="packages_modules_adb" remote="pixel" />
@@ -149,7 +150,7 @@
   <project path="system/libufdt" name="system_libufdt" remote="pixel" />
   <project path="system/libziparchive" name="system_libziparchive" remote="pixel" />
   <project path="system/media" name="system_media" remote="pixel" />
-  <project path="system/netd" name="system_netd" remote="pixel" />
+  <project path="system/netd" name="system_netd" remote="pixel++" />
   <project path="system/nfc" name="system_nfc" remote="pixel" />
   <project path="system/security" name="system_security" remote="pixel" />
   <project path="system/sepolicy" name="system_sepolicy" remote="pixel" />
