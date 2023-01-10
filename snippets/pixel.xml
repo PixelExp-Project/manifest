@@ -50,13 +50,13 @@
   <project path="frameworks/native" name="frameworks_native" remote="pixel++" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="pixel" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixel" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="pixel++" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="pixel" />
   <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="pixel" />
 
   <!-- General repos -->
   <project path="art" name="art" remote="pixel" />
   <project path="bionic" name="bionic" remote="pixel++" />
-  <project path="build/make" name="build" remote="pixel++">
+  <project path="build/make" name="build" remote="pixel">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -65,7 +65,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" remote="pixel++" >
+  <project path="build/soong" name="build_soong" remote="pixel" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -118,8 +118,8 @@
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="pixel" />
   <project path="packages/apps/Traceur" name="packages_apps_Traceur" remote="pixel" />
   <project path="packages/modules/adb" name="packages_modules_adb" remote="pixel" />
-  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="pixel++" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="pixel++" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="pixel" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="pixel" />
   <project path="packages/modules/DnsResolver" name="packages_modules_DnsResolver" remote="pixel" />
   <project path="packages/modules/NetworkStack" name="packages_modules_NetworkStack" remote="pixel" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="pixel" />
@@ -135,7 +135,7 @@
 
   <!-- System Repos -->
   <project path="system/bpf" name="system_bpf" remote="pixel" />
-  <project path="system/core" name="system_core" remote="pixel++" />
+  <project path="system/core" name="system_core" remote="pixel" />
   <project path="system/extras" name="system_extras" remote="pixel" />
   <project path="system/incremental_delivery" name="system_incremental_delivery" remote="pixel" />
   <project path="system/libhidl" name="system_libhidl" remote="pixel" />
@@ -153,7 +153,7 @@
   <project path="system/tools/hidl" name="system_tools_hidl" remote="pixel" />
   <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="pixel" />
   <project path="system/update_engine" name="system_update_engine" remote="pixel" />
-  <project path="system/vold" name="system_vold" remote="pixel++" />
+  <project path="system/vold" name="system_vold" remote="pixel" />
 
   <!-- Tools Repos -->
   <project path="tools/metalava" name="tools_metalava" remote="pixel" />
